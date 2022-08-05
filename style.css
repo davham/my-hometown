@@ -4,7 +4,14 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.container {
+    border: red 2px solid;
+    border-radius: 15px;
+    width: 900px;
+    margin: 20px auto;
+    background-image:linear-gradient(#6394e2, #fff);
 
+}
 .hero-img{
     background-image: url('images/Toronto_Skyline.jpeg');
     background-size: cover;
@@ -14,10 +21,11 @@ body {
     width: 800px;
     margin: 0 auto;
     padding-top: 140px;
+    
     }
 
 h1 ,
 h2 {
-    color: white;
-    text-shadow: 0 0 3px black;
+    color: black;
+    
 }
