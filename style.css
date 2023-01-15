@@ -1,11 +1,11 @@
 body {
     margin: 0;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container {
-    border: red 2px solid;
+    
     border-radius: 15px;
     width: 700px;
     margin: 20px auto;
@@ -15,7 +15,6 @@ body {
 .hero-img{
     background-image: url('images/Toronto_Skyline.jpeg');
     background-size: cover;
-    /* background-position: center; */
     background-repeat: no-repeat;
     height: 400px;
     width: 600px;
@@ -32,13 +31,58 @@ h1, h2 {
     color: white;
     text-shadow: 0 0 4px black;
 }
+
 .activity-container {
     display: flex;
+    width: 700px;
 }
 
 .activity-image{
     width: 100px;
+    height: 100px;
+    border-radius: 50%;;
 }
 .activities {
     padding: 0 5px;
+    margin: 5px;
+    border-radius: 10px;
+    text-shadow: 0 0 black;
+    font-weight: 300;
+}
+
+.activities:hover {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+.guide-container {
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+    margin: 0 auto;
+     margin-top: 15px;
+    
+}
+
+.gc-col-pd {
+    padding: 10px;
+    width: 300px;;
+}
+.img-guide {
+     width: 150px;
+     border-radius: 10px;;
+
 }
